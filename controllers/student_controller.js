@@ -22,6 +22,7 @@ const createStudentController = async (req, res) => {
 
 const getStudentsController = async (req, res) => {
     try {
+        console.log(req.user)
         const studentsData = await StudentModel.find()
 
 
